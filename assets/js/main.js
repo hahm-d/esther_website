@@ -219,9 +219,9 @@ function submitForm(e) {
   e.preventDefault();
 
   //   Get input Values
-  let name = document.querySelector(".name").value;
-  let email = document.querySelector(".email").value;
-  let message = document.querySelector(".message").value;
+  let name = document.querySelector("#name").value;
+  let email = document.querySelector("#email").value;
+  let message = document.querySelector("#subject").value;
   console.log(name, email, message);
 
   sendEmail(name, email, message);
@@ -231,8 +231,8 @@ function submitForm(e) {
 
 function sendEmail(name, email, message) {
     Email.send({
-        SecureToken: "f5a1f778-59a4-4eb5-a9a9-7fa1692e97e5",
-        To : "dhahm01@gmail.com",
+        SecureToken: "486f5cfa-5cbc-4337-83a1-f65de16e0006",
+        To : "inquireabyk@gmail.com",
         From : email,
         Subject : `${name} reaching out via website`,
         Body : message
